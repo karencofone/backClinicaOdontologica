@@ -14,7 +14,7 @@ import java.util.List;
     @RequiredArgsConstructor
     @RequestMapping("/roles")
     public class RolController {
-        RolService rolService;
+        private final RolService rolService;
 
         @PostMapping("/agregar")
         public ResponseEntity<?> agregar(@RequestBody Rol rol) {
@@ -22,7 +22,7 @@ import java.util.List;
             var buscarPorNombre = rolService.buscarPorNombre(nombre);
 
             if (buscarPorNombre!= null){
-                throw new RequestException("400 Bad Request","Rol ya existente");
+                throw new RequestException("400 Bad Request","Rol existente");
             }
             if (nombre != null &  !nombre.equals("")  ){
                 rolService.agregar(rol);
@@ -47,7 +47,7 @@ import java.util.List;
 
             if (getId.isPresent()) {
                 if (buscarPorNombre!= null){
-                    throw new RequestException("400 Bad Request","Rol ya existente");
+                    throw new RequestException("400 Bad Request","Rol existente");
                 }
                 if (nombre != null &  !nombre.equals("")  ){
                     rolService.modificar(rol, id);
@@ -69,7 +69,7 @@ import java.util.List;
                 throw new RequestException("400 Bad Request","No existe rol para el id: "+id);
             } else {
                 rolService.eliminar(id);
-                return new ResponseEntity<>(("El rol con Id: "+id+" fue eliminado con éxito"), null, HttpStatus.CREATED);
+                return new ResponseEntity<>(("El rol con id "+id+" fue eliminado con éxito"), null, HttpStatus.CREATED);
             }
         }
 

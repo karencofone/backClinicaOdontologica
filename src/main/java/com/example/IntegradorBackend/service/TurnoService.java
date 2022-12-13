@@ -1,6 +1,5 @@
 package com.example.IntegradorBackend.service;
 
-import com.example.IntegradorBackend.entidades.Odontologo;
 import com.example.IntegradorBackend.entidades.Turno;
 import com.example.IntegradorBackend.dto.TurnoDTO;
 import com.example.IntegradorBackend.repository.TurnoRepository;
@@ -20,13 +19,13 @@ public class TurnoService {
     public List<Turno> listar() {
         return turnoRepository.findAll();
     }
-    public void modificar(Turno turno, Long id) {
+    public void modificar(TurnoDTO turno, Long id) {
 
         var turnoNew = turnoRepository.findById(id).get();
         var fecha = turno.getFecha();
 
-        var odontologo = odontologoService.buscarPorId(turno.getOdontologo());
-        var paciente = pacienteService.buscarPorId(turno.getPaciente());
+        var odontologo = odontologoService.buscarPorId(turno.getIdOdontologo());
+        var paciente = pacienteService.buscarPorId(turno.getIdPaciente());
 
         odontologo.ifPresent(turnoNew::setOdontologo);
         paciente.ifPresent(turnoNew::setPaciente);
@@ -53,22 +52,17 @@ public class TurnoService {
         turnoRepository.deleteByPaciente(id);
     }
 
-    public void agregar(Turno t){
-        turnoRepository.save(t);
+    public Turno agregarDTO (TurnoDTO turnoDto){
+        var odontologo = odontologoService.buscarPorId(turnoDto.getIdOdontologo()).get();
+        var paciente = pacienteService.buscarPorId(turnoDto.getIdPaciente()).get();
+        var fecha = turnoDto.getFecha();
+        var turnoNew = new Turno();
+        turnoNew.setOdontologo(odontologo);
+        turnoNew.setPaciente(paciente);
+        turnoNew.setFecha(fecha);
+        turnoRepository.save(turnoNew);
+        return turnoNew;
     }
-
-    //public Turno agregarDTO (TurnoDTO turnoDto){
-      //  var odontologo = odontologoService.buscarPorId(turnoDto.getIdOdontologo()).get();
-        //var paciente = pacienteService.buscarPorId(turnoDto.getIdPaciente()).get();
-        //var fecha = turnoDto.getFecha();
-        //var turnoNew = new Turno();
-        //turnoNew.setOdontologo(odontologo);
-        //turnoNew.setPaciente(paciente);
-        //turnoNew.setFecha(fecha);
-        //turnoRepository.save(turnoNew);
-        //return turnoNew;
-    //}
-
     public void borrarTodos(){
         turnoRepository.deleteAll();
     }

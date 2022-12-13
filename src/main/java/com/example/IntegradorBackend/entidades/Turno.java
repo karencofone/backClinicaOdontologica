@@ -13,12 +13,15 @@ public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name="Fecha")
+    private LocalDateTime fecha;
+
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "Id_Odontologo")
     private Odontologo odontologo;
+
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "Id_Paciente")
     private Paciente paciente;
-    @Column(name="Fecha")
-    private LocalDateTime fecha;
 }
