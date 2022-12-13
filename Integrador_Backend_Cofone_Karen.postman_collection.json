@@ -1,0 +1,1582 @@
+{
+	"info": {
+		"_postman_id": "3f0dcfff-e4fd-4055-8fad-87d204396a68",
+		"name": "Integrador_Backend_Cofone_Karen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23504616"
+	},
+	"item": [
+		{
+			"name": "Odontologo",
+			"item": [
+				{
+					"name": "Agregar odontologo 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"victoria\", \"apellido\":\"gomez\", \"matricula\":\"123456\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/odontologos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar odontologo 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"julio\", \"apellido\":\"sosa\", \"matricula\":\"1234567\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/odontologos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar odontologo 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"jorge\", \"apellido\":\"duje\", \"matricula\":\"12345678\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/odontologos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar odontologos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar odontologo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"maría\", \"apellido\":\"gomez\", \"matricula\":\"123456\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/odontologos/modificar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"modificar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar odontologo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar odontologo por id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/buscar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"buscar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar odontologo por matricula",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/buscarMatricula/123456",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"buscarMatricula",
+								"123456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar registros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/odontologos/eliminarRegistros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"odontologos",
+								"eliminarRegistros"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Agregar paciente 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"macarena\", \"apellido\":\"sosa\", \"domicilio\":\"av falsa 123\", \"dni\":\"40270939\", \"fechaAlta\":\"2022-10-10\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pacientes/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar paciente 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"juan\", \"apellido\":\"fernandez\", \"domicilio\":\"av siempre viva 123\", \"dni\":\"20210989\", \"fechaAlta\":\"2022-05-18\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pacientes/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar paciente 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"julieta\", \"apellido\":\"rizzi\", \"domicilio\":\"av córdoba 1235\", \"dni\":\"42698572\", \"fechaAlta\":\"2021-04-16\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pacientes/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar pacientes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar paciente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\":\"macarena\", \"apellido\":\"sosa\", \"domicilio\":\"av falsa 123\", \"dni\":\"40270939\", \"fechaAlta\":\"2022-09-10\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pacientes/modificar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"modificar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar paciente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/eliminar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"eliminar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar paciente por id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar paciente por dni",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/buscarDni/42698572",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"buscarDni",
+								"42698572"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar registros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pacientes/eliminarRegistros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes",
+								"eliminarRegistros"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Turnos",
+			"item": [
+				{
+					"name": "Agregar turno 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idOdontologo\":4, \"idPaciente\":5, \"fecha\":\"2023-10-10T00:00:00\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/turnos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar turno 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idOdontologo\":5, \"idPaciente\":6, \"fecha\":\"2023-11-10T00:00:00\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/turnos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar turno 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idOdontologo\":4, \"idPaciente\":5, \"fecha\":\"2023-02-10T00:00:00\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/turnos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar turnos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/turnos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar turno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idOdontologo\":4, \"idPaciente\":5, \"fecha\":\"2023-05-10T00:00:00\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/turnos/modificar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"modificar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar turno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/eliminar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"eliminar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar turno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/buscar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar turnos de un odontologo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/buscarOdontologo/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"buscarOdontologo",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar turnos de un paciente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/buscarPaciente/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"buscarPaciente",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar turnos de un odontologo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/eliminarOdontologo/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"eliminarOdontologo",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar turnos de un paciente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/eliminarPaciente/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"eliminarPaciente",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar registros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/turnos/eliminarRegistros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"turnos",
+								"eliminarRegistros"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Agregar rol 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\"nombre\": \"admin\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar rol 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\": \"user\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar roles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/roles/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar rol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"nombre\": \"admin1\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/modificar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"modificar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar rol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/roles/eliminar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar rol por id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/roles/buscar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"buscar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Agregar usuario 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjUxNDg5OSwiaWF0IjoxNjcwODA5ODY1fQ.fYyhzanFapLSLI92ol8Tt9nZqDyBCk5EJHVu44Fhyr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"kcofone\", \"password\":\"12345\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/roles/usuarios/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"roles",
+								"usuarios",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar usuario 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjYwOTQ1MywiaWF0IjoxNjcwOTA0NDE5fQ.HIL22q1vE4jfn-7MzLcIyXocNkrrQW3ItRU4jCCFwqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"vicky@gmail.com\", \"password\":\"12345\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar rol a usuario 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjYwOTQ1MywiaWF0IjoxNjcwOTA0NDE5fQ.HIL22q1vE4jfn-7MzLcIyXocNkrrQW3ItRU4jCCFwqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"userName\":\"ka@gmail.com\", \"nombreRol\":\"admin\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/agregarRol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"agregarRol"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar rol a usuario 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjYwOTQ1MywiaWF0IjoxNjcwOTA0NDE5fQ.HIL22q1vE4jfn-7MzLcIyXocNkrrQW3ItRU4jCCFwqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"userName\":\"vicky@gmail.com\", \"nombreRol\":\"admin\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/agregarRol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"agregarRol"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar usuarios",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjYwOTQ1MywiaWF0IjoxNjcwOTA0NDE5fQ.HIL22q1vE4jfn-7MzLcIyXocNkrrQW3ItRU4jCCFwqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"ka@gmail.com\", \"password\":\"6789\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/modificar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"modificar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar por id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjYwOTQ1MywiaWF0IjoxNjcwOTA0NDE5fQ.HIL22q1vE4jfn-7MzLcIyXocNkrrQW3ItRU4jCCFwqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuarios/eliminar/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"eliminar",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar registros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXJlbiIsImV4cCI6MTY3MjYwOTQ1MywiaWF0IjoxNjcwOTA0NDE5fQ.HIL22q1vE4jfn-7MzLcIyXocNkrrQW3ItRU4jCCFwqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuarios/eliminarRegistros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"eliminarRegistros"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"karen\", \"password\":\"1234\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
