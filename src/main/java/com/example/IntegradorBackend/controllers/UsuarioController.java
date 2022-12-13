@@ -53,13 +53,9 @@ public class UsuarioController {
             var password = usuario.getPassword();
 
             var getId = usuarioService.buscarPorId(id);
-            //var buscarPorEmail = usuarioService.buscarPorEmail(email);
 
             if (getId.isPresent()) {
-                //if (buscarPorEmail!= null){
-                  //  throw new RequestException("400 Bad Request","El email ya existe");
-                //}
-                if (/*email != null &*/ password != null /*& !email.equals("")*/ & !password.equals("") ){
+                if ( password != null /*& !email.equals("")*/ & !password.equals("") ){
                     usuarioService.modificar(usuario, id);
                     return new ResponseEntity<>("El usuario fue actualizado con éxito", null, HttpStatus.CREATED);
                 } else{
